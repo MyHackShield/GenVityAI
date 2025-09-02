@@ -1,0 +1,32 @@
+{
+  "name": "Gen Vity AI",
+  "short_name": "GenVity",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#000000",
+  "orientation": "portrait",
+  "description": "A web application for AI-driven marketing solutions.",
+  "icons": [
+    {
+      "src": "/assets/icons/favicon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/icons/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/icons/favicon.png",
+      "sizes": "152x152",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/icons/favicon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}

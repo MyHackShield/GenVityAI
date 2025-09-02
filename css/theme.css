@@ -1,0 +1,63 @@
+/* Reset global */
+*,
+*::before,
+*::after
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+:root
+{
+    /* 🎨 Core Brand */
+    --color-primary: #003333;
+    --color-secondary: #4DB6AC;
+    --color-accent1: #FFA726;
+    --color-accent2: #FF7043;
+    --color-accent3: #607D8B;
+
+    /* 🖤 Background */
+    --color-bg-primary: #F1F8F7;
+    --color-bg-secondary: #E0F2F1;
+    --color-bg-neutral: #FFFFFF;
+
+    /* ✍️ Text */
+    --color-text-primary: #212121;
+    --color-text-secondary: #070606;
+    --color-text-neutral: #dfdfdf;
+    --color-text-highlight1: var(--color-primary);
+    --color-text-highlight2: var(--color-accent1);
+
+    /* 🔘 Buttons & Actions */
+    --color-btn-bg: var(--color-secondary);
+    --color-btn-text: var(--color-bg-darker);
+    --color-btn-hover-bg: var(--color-secondary);
+    --color-btn-hover-text: var(--color-bg-dark);
+    --color-btn-outline: var(--color-primary);
+
+    /* ➖ Neutrals / Utility */
+    --color-border-light: #D9D9D9;
+    --color-border-dark: #222222;
+
+    /* 🌌 Gradients */
+    --gradient-hero: linear-gradient(180deg, #0D0D0D 0%, #003333 100%);
+    --gradient-accent: linear-gradient(90deg, #00C8C8 0%, #00F5FF 100%);
+
+
+    /* Espaçamentos */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 1.5rem;
+    --spacing-lg: 2rem;
+
+    /* Bordas e sombras */
+    --radius-sm: 6px;
+    --radius-md: 12px;
+    --radius-lg: 20px;
+
+    --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.08);
+    --shadow-md: 0 6px 14px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 12px 28px rgba(0, 0, 0, 0.12);
+}

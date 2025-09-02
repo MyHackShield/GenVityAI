@@ -1,0 +1,569 @@
+/* ===========================
+   mobile.css  (base - mobile)
+   =========================== */
+
+/* ===========================
+   BASE
+   =========================== */
+body
+{
+    font-family: var(--font-family-base, "Inter", sans-serif);
+    font-size: 1rem;
+    line-height: 1.3;
+    color: var(--text-primary, #212121);
+    background: var(--bg-primary, #F1F8F7);
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Links */
+a
+{
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:focus-visible
+{
+    outline: 2px solid var(--color-accent1, #0077ff);
+    outline-offset: 3px;
+}
+
+/* ===========================
+   BOTÕES
+   =========================== */
+.btn
+{
+    display: inline-block;
+    padding: 1rem 1.25rem;
+    background-color: var(--color-btn-bg);
+    border-radius: var(--radius-md, 8px);
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease;
+    text-align: center;
+    border: 2px solid transparent;
+}
+
+/* Primary */
+.btn-primary
+{
+    background: var(--color-primary, #0077ff);
+    color: var(--color-btn-text, #fff);
+    border: 2px solid var(--color-primary);
+}
+
+.btn-primary:hover,
+.btn-primary:focus-visible
+{
+    transform: scale(1.05);
+    box-shadow: var(--shadow-md, 0 8px 18px rgba(154, 196, 197, 0.08));
+}
+
+/* Secondary / Outline */
+.btn-secondary
+{
+    background: transparent;
+    color: var(--color-primary);
+    border: 2px solid var(--color-primary);
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus-visible
+{
+    background: var(--color-primary);
+    color: var(--bg-neutral, #fff);
+    transform: scale(1.05);
+}
+
+/* Highlight / important CTA */
+.btn-highlight
+{
+    background: var(--color-accent1);
+    color: var(--bg-neutral, #fff);
+    border: 2px solid var(--color-accent1);
+}
+
+.btn-highlight:hover
+{
+    transform: scale(1.1);
+    box-shadow: var(--shadow-md);
+}
+
+/* Disabled */
+.btn-disabled
+{
+    background: var(--color-bg-disabled, #e6e6e6);
+    color: var(--color-text-disabled, #888);
+    border-color: var(--color-bg-disabled, #e6e6e6);
+    cursor: not-allowed;
+    opacity: .7;
+}
+
+/* ===========================
+   HERO (mobile)
+   =========================== */
+.hero-section
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2.25rem .25rem;
+    background-color: var(--color-bg-primary);
+    background-image: url("../assets/gif/background-hero.gif");
+    background-blend-mode: luminosity;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero-content
+{
+    max-width: 500px;
+    padding: 1rem;
+}
+
+.hero-title
+{
+    font-size: 4rem;
+    font-weight: 900;
+    color: var(--color-text-neutral);
+    margin-bottom: .25rem;
+}
+
+.hero-subtitle
+{
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-text-neutral, #fff);
+    margin-bottom: .5rem;
+}
+
+.hero-description
+{
+    font-size: 1.25rem;
+    color: var(--color-text-neutral, #54606b);
+    margin-bottom: .75rem;
+}
+
+.hero-cta
+{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: .5rem;
+}
+
+/* Hero image */
+.hero-image picture
+{
+    display: none;
+}
+/* ===========================
+   SECTION TITLES
+   =========================== */
+.title {
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    margin-bottom: 1.5rem;
+}
+
+.intro
+{
+    margin-bottom: 1rem;
+}
+
+.text-center
+{
+    text-align: center;
+}
+
+/* =======================
+   Cards
+   ======================= */
+.cards
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-md, 2rem);
+    padding: var(--spacing-md, 2rem);
+    max-width: 650px;
+    margin: auto;
+}
+
+/* Estilo do card */
+.card
+{
+    background: var(--color-bg-light, #fff);
+    border-radius: var(--radius-lg, 1.25rem);
+    border-width: 0 0 4px 4px;
+    border-style: solid;
+    border-color: var(--color-border-dark);
+    box-shadow: var(--shadow-md, 0 8px 20px rgba(0, 0, 0, 0.08));
+    padding: var(--spacing-md, 2rem);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Animação suave no hover */
+.card:hover
+{
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg, 0 12px 28px rgba(0, 0, 0, 0.12));
+}
+
+/* Título */
+.card h3
+{
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+    color: var(--color-text-primary, #111);
+}
+
+/* Texto */
+.card p
+{
+    flex-grow: 1;
+    color: var(--color-text-secondary, #555);
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.25rem;
+}
+
+.card ul
+{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    list-style: none;
+    text-align: left;
+    font-size: .8rem;
+    margin-bottom: 1rem;
+}
+
+/* ===========================
+   PROBLEM (cards stacked)
+   =========================== */
+.problem-section
+{
+    padding: 2rem 0.5rem;
+    background: var(--color-bg-secondary, #E0F2F1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+.problem-result
+{
+    margin-top: 1rem;
+    color: var(--text-primary);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+/* ===========================
+   SOLUTION (lista vertical)
+   =========================== */
+.solution-section
+{
+    padding: 2rem 0.5rem;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* ===========================
+   COMMUNITY
+   =========================== */
+.community-section
+{
+    padding: 2rem 0.5rem;
+    background-color: var(--color-bg-secondary);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.community-section .intro
+{
+    margin-bottom: 1rem;
+}
+
+.community-list
+{
+    max-width: 900px;
+    margin: 0 auto;
+    padding-left: 1rem;
+    text-align: left;
+}
+
+/* ===========================
+   PLANS (stacked cards)
+   =========================== */
+.plans-section
+{
+    padding: 2rem 0.5rem;
+}
+
+
+/* ===========================
+   WHY IT WORKS (cards stacked)
+   =========================== */
+.why-works-section
+{
+    padding: 2rem 0rem;
+    background-color: var(--color-bg-secondary);
+}
+
+
+/* ===========================
+   TESTIMONIALS (stacked)
+   =========================== */
+.testimonials-section
+{
+    padding: 2rem .5rem;
+}
+
+.testimonial-cards
+{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.testimonial-card
+{
+    position: relative;
+    width: 350px;
+    background: #fff;
+    border-width: 0 0 4px 4px;
+    border-style: solid;
+    border-color: var(--color-border-dark);
+    border-radius: 15px;
+    padding: 60px 20px 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 50px auto;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Foto circular */
+.testimonial-card .avatar
+{
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial-card .avatar img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Título */
+.testimonial-card .title
+{
+    color: #2563eb;
+    /* Azul */
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Texto */
+.testimonial-card .text
+{
+    font-size: 14px;
+    color: #374151;
+    /* Cinza escuro */
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Nome */
+.testimonial-card .name
+{
+    font-weight: bold;
+    color: #111827;
+    margin-bottom: 15px;
+}
+
+/* Estrelas */
+.testimonial-card .stars
+{
+    font-size: 22px;
+    color: #fbbf24;
+    /* Amarelo */
+    letter-spacing: 3px;
+}
+
+
+/* ===========================
+   FINAL CTA
+   =========================== */
+.final-cta
+{
+    padding: 2.5rem 0;
+    background: var(--color-bg-secondary);
+}
+
+.final-buttons
+{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+/* ===========================
+   FOOTER (mobile stacked)
+   =========================== */
+.site-footer
+{
+    background: var(--color-bg, #ffffff);
+    padding: 2rem 1rem;
+    border-top: 1px solid var(--color-border, #e5e7eb);
+    font-family: 'Inter', sans-serif;
+    color: var(--color-text, #111827);
+}
+
+/* Seções do footer em coluna (mobile-first) */
+.site-footer>div
+{
+    margin-bottom: 1.5rem;
+}
+
+/* Marca */
+.footer-brand h3
+{
+    color: var(--color-accent, #2563eb);
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.footer-brand p
+{
+    font-size: 0.9rem;
+    color: var(--color-text-light, #6b7280);
+    line-height: 1.5;
+}
+
+/* Links */
+.footer-links h4,
+.footer-social h4
+{
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+    color: var(--color-text, #111827);
+}
+
+.footer-links ul
+{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links ul li
+{
+    margin-bottom: 0.5rem;
+}
+
+.footer-links ul li a
+{
+    color: var(--color-text-light, #6b7280);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+.footer-links ul li a:hover
+{
+    color: var(--color-accent, #2563eb);
+}
+
+.footer-social 
+{
+    display: flex;
+    flex-direction: row;
+}
+
+/* Ícones Sociais */
+.social-icons
+{
+    display: flex;
+    gap: 1rem;
+}
+
+.social-icons a
+{
+    font-size: 1.4rem;
+    color: var(--color-social, #374151);
+    transition: color 0.3s;
+}
+
+.social-icons a:hover
+{
+    color: var(--color-social-hover, #0ea5e9);
+}
+
+/* Parte inferior */
+.footer-bottom
+{
+    border-top: 2px solid var(--color-border, #e5e7eb);
+    padding-top: 1rem;
+}
+
+.footer-bottom p
+{
+    font-size: 0.8rem;
+    color: var(--color-text-light, #6b7280);
+}
+
+/* Small helpers */
+.text-gradient
+{
+    font-weight: 700;
+    background: linear-gradient(90deg, #0077ff, #00d4ff, #0077ff);
+    background-size: 200% 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientMove 3s linear infinite;
+}
+
+@keyframes gradientMove
+{
+    0%
+    {
+        background-position: 0% 0%;
+    }
+
+    100%
+    {
+        background-position: 200% 0%;
+    }
+}

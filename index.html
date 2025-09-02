@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Charset & Responsividade -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título e SEO básico -->
+    <title>GenVity AI | Analise exames com Inteligência Artificial</title>
+    <meta name="description"
+        content="Analise seus exames com a ajuda da Inteligência Artificial. Obtenha insights precisos e rápidos para melhorar sua saúde.">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="keywords" content="GenVity AI, Inteligência Artificial, Análise de Exames, Saúde">
+    <meta name="author" content="GenVity AI Team">
+    <link rel="canonical" href="https://www.genvityai.com/">
+
+    <!-- Evitar detecção automática de telefone -->
+    <meta name="format-detection" content="telephone=no">
+
+    <!-- DNS Prefetch & Preconnect (otimização de carregamento externo) -->
+    <link rel="dns-prefetch" href="//connect.facebook.net">
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link rel="preconnect" href="//connect.facebook.net" crossorigin>
+    <link rel="preconnect" href="//fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="//fonts.gstatic.com" crossorigin>
+
+    <!-- Favicon & Manifest PWA -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon.ico">
+    <link rel="manifest" href="./manifest.json">
+    <meta name="theme-color" content="#0ea5e9">
+
+    <!-- Open Graph / Redes Sociais -->
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="GenVity AI">
+    <meta property="og:title" content="GenVity AI | Análise de Exames com Inteligência Artificial">
+    <meta property="og:description"
+        content="Analise seus exames com a ajuda da Inteligência Artificial. Obtenha insights precisos e rápidos para melhorar sua saúde.">
+    <meta property="og:url" content="https://www.genvityai.com/">
+    <meta property="og:image" content="https://www.genvityai.com/assets/images/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@genvityai">
+    <meta name="twitter:title" content="GenVity AI | Análise de Exames com Inteligência Artificial">
+    <meta name="twitter:description"
+        content="Analise seus exames com a ajuda da Inteligência Artificial. Obtenha insights precisos e rápidos para melhorar sua saúde.">
+    <meta name="twitter:image" content="https://www.genvityai.com/assets/images/og-image.png">
+
+    <!-- CSS com Media Queries (Mobile First) -->
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/mobile.css" media="(max-width: 767px)">
+    <link rel="stylesheet" href="css/tablet.css" media="(min-width: 768px) and (max-width: 1023px)">
+    <link rel="stylesheet" href="css/desktop.css" media="(min-width: 1024px)">
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "name": "GenVity AI",
+        "url": "https://www.genvityai.com/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.genvityai.com/assets/images/logo.png"
+        },
+        "sameAs": [
+          "https://www.facebook.com/genvityai",
+          "https://twitter.com/genvityai",
+          "https://www.linkedin.com/company/genvityai"
+        ],
+        "description": "Analise seus exames com a ajuda da Inteligência Artificial. Obtenha insights precisos e rápidos para melhorar sua saúde."
+      },
+      {
+        "@type": "WebSite",
+        "url": "https://www.genvityai.com/",
+        "name": "GenVity AI",
+        "description": "A web application for AI-driven marketing solutions.",
+        "potentialAction": {
+          "@type": "SubscribeAction",
+          "target": "https://www.genvityai.com/#plans"
+        }
+      },
+      {
+        "@type": "WebPage",
+        "url": "https://www.genvityai.com/",
+        "name": "GenVity AI",
+        "description": "Application for exames analysis and recommendations"
+      },
+      {
+        "@type": "SoftwareApplication",
+        "name": "GenVity AI",
+        "url": "https://www.genvityai.com/",
+        "description": "Application for exames analysis and recommendations"
+      }
+    ]
+  }
+  </script>
+
+    <!-- Meta Pixel / Facebook Tracking -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+
+        fbq('init', 'YOUR_PIXEL_ID');
+        fbq('track', 'PageView');
+    </script>
+    <noscript>
+        <img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID&ev=PageView&noscript=1" />
+    </noscript>
+</head>
+
+<body>
+    <!-- Hero Section -->
+    <header id="hero" class="hero-section text-center">
+        <div class="hero-content">
+            <h1 class="hero-title text-gradient">GenVity AI</h1>
+            <p class="hero-subtitle">
+                O seu protocolo definitivo para viver mais e melhor, guiado por inteligência artificial.
+            </p>
+            <p class="hero-description">
+                Longevidade não é só sobre anos; é sobre momentos. A GEN, nossa IA ativa, irá te ler na informação mais profunda — no seu código genético, biológico, rotina e hábitos — e transformar ciência em experiências diárias que motivam, conectam e fazem você evoluir todos os dias.
+            </p>
+            <div class="hero-cta">
+                <a href="#plans" class="btn btn-primary">🚀 Quero ativar minha GEN agora</a>
+                <a href="#benefits" class="btn btn-secondary">Saiba Mais</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <picture>
+                <source srcset="assets/icons/favicon.png" media="(max-width: 767px)">
+                <source srcset="assets/icons/favicon.png" media="(min-width: 768px)">
+                <source srcset="assets/icons/favicon.png" media="(min-width: 1024px)">
+                <img src="assets/icons/favicon.png" alt="GenVity AI Illustration" loading="lazy">
+            </picture>
+        </div>
+    </header>
+
+    <main>
+        <!-- Problem Section -->
+        <section id="problem" class="problem-section">
+            <h2 class="title text-center">O Problema</h2>
+            <ul class="cards problem-list">
+                <li class="card">
+                    <h3>Protocolos genéricos não funcionam:</h3>
+                    <p>
+                        Médicos, academias e apps oferecem soluções iguais para todos.
+                    </p>
+                </li>
+                <li class="card">
+                    <h3>
+                        Ninguém olha você como único:
+                    </h3>
+                    <p>
+                        Sua genética, hormônios, ancestralidade e rotina são ignorados.
+                    </p>
+                </li>
+                <li class="card">
+                    <h3>
+                        Planos são esquecidos:
+                    </h3>
+                    <p>
+                        Dietas, treinos e suplementos morrem na gaveta sem apoio real.
+                    </p>
+                </li>
+                <li class="card">
+                    <h3>
+                        Sem apoio ativo, não há continuidade:
+                    </h3>
+                    <p>
+                        motivação evapora e o ciclo recomeça. ⏳
+                    </p>
+                </li>
+            </ul>
+
+            <p class="problem-result text-center">
+                <strong>Resultado:</strong> Pessoas vivem mais, mas não vivem melhor — presas em ciclos de tentativa e erro, sem uma solução que as entenda de forma verdadeiramente <em>conforme seu código genético e biológico</em>.
+            </p>
+            <div class="cta-center">
+                <a href="#solution" class="btn btn-accent">
+                    ⚡ Quero sair desse ciclo agora
+                </a>
+            </div>
+        </section>
+
+        <!-- Solution Section -->
+        <section id="solution" class="solution-section">
+                <h2 class="title text-center">
+                    A Solução - <span class="highlight">GenVity AI</span>
+                </h2>
+                <p class="intro text-center">
+                    A primeira <strong>IA ativa de longevidade</strong> que guia você todos os dias,
+                    de forma única, motivadora e conectada.
+                </p>
+                
+                <ul class="cards">
+                    <li class="card">
+                        <h3>Personalização profunda:</h3>
+                        <p>
+                            Análise genética, exames, nutrição, saúde mental, ancestralidade e rotina.
+                        </p>
+                    </li>
+                    <li class="card">
+                        <h3>Protocolos 360°:</h3>
+                        <p>
+                            Nutricionista, psicóloga, educador físico e medicina preventiva.
+                        </p>
+                    </li>
+                    <li class="card">
+                        <h3>Assistente GEN:</h3>
+                        <p>
+                            Não só informa — lembra, ajusta, motiva e acompanha em tempo real.
+                        </p>
+                    </li>
+                    <li class="card">
+                        <h3>Execução diária:</h3>
+                        <p>
+                            Do suplemento ao treino, da lista de compras ao descanso, tudo integrado.
+                        </p>
+                    </li>
+                    <li class="card">
+                        <h3>Evolução contínua:</h3>
+                        <p>
+                            Quanto mais você usa, mais a GEN aprende e se adapta.
+                        </p>
+                    </li>
+                    <li class="card">
+                        <h3>Experiência e comunidade:</h3>
+                        <p>
+                            Desafios semanais, grupos por objetivo, conquistas e eventos ao vivo.
+                        </p>
+                    </li>
+                </ul>
+
+                <p class="text-center">
+                    👉 Com a <span class="text-gradient">Genvity AI</span>, saúde deixa de ser tentativa e erro. É <strong>ciência + experiência + comunidade</strong> — todos os dias.
+                </p>
+                
+                <a href="#plans" class="btn btn-primary">
+                    ✨ Experimente a GEN agora - Grátis
+                </a>
+        </section>
+
+        <!-- Community Section -->
+        <section id="community" class="community-section">
+                <h2 class="title text-center">Experiências & Comunidade</h2>
+                <p class="intro text-center">
+                    <em>Pessoas vivem de momentos. Nós criamos os seus.</em>
+                </p>
+        
+                <ul class="cards">
+                    <li class="card">
+                        <h3>Desafios guiados (7/21/30 dias):</h3>
+                        <p>Sono, foco, força, metabolismo.</p>
+                    </li>
+                    <li class="card">
+                        <h3>Comunidades por objetivo:</h3>
+                        <p>Emagrecimento, performance, low-inflammation, saúde da mulher.</p>
+                    </li>
+                    <li class="card">
+                        <h3>Interatividade motivadora:</h3>
+                        <p>Conquistas, progressos, metas semanais e apoio em grupo.</p>
+                    </li>
+                    <li class="card">
+                        <h3>Sessões ao vivo:</h3>
+                        <p>Treinos, respiração, alongamento, Q&amp;A com especialistas.</p>
+                    </li>
+                    <li class="card">
+                        <h3>Clubes locais:</h3>
+                        <p>Corrida, caminhada, padel, academia — encontre seu grupo e vá acompanhado.</p>
+                    </li>
+                </ul>
+        
+                <p class="conclusion">
+                    👉 <em>Viva experiências que sustentam hábitos.</em>
+                </p>
+        
+                <a href="#community-join" class="btn btn-secondary">
+                    🤝 Entrar na comunidade agora
+                </a>
+        </section>
+
+        <!-- Plans Section -->
+        <section id="plans" class="plans-section">
+            <h2 class="title text-center">Nossos Planos</h2>
+            <ul class="cards">
+                <li class="card free">
+                    <h3 class="text-center">🌱 Free - GEN</h3>
+                    <p class="text-center intro">Seu primeiro passo para uma vida guiada pela IA.</p>
+                    <ul>
+                        <li>Acesso imediato à assistente GEN já ativa.</li>
+                        <li>Sua rotina guiada para uma saúde plena.</li>
+                        <li>Ajustes diários conforme GEN conhece você.</li>
+                        <li>Interações diárias que geram mudanças consistentes.</li>
+                        <li>Acesso a desafios básicos e comunidades abertas.</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary">✨ Começar grátis</a>
+                </li>
+
+                <li class="card better">
+                    <h3 class="text-center intro">💪 Better Life</h3>
+                    <p class="text-center">Um salto para a vida que você merece.</p>
+                    <ul>
+                        <li>Exames de sangue periódicos inclusos.</li>
+                        <li>Protocolos de nutricionista, saúde mental e avaliação física.</li>
+                        <li>GEN com interações mais profundas.</li>
+                        <li>Sugestões personalizadas de suplementos, treinos e alimentação.</li>
+                        <li>Acesso a desafios avançados, aulas ao vivo e comunidades premium.</li>
+                        <li>Relatórios de progresso mensais e metas por fase.</li>
+                    </ul>
+                    <a href="#" class="btn btn-secondary">⚡ Quero o Better Life</a>
+                </li>
+
+                <li class="card immortal">
+                    <h3 class="intro text-center">🔥 Immortal</h3>
+                    <p class="text-center">
+                        O futuro da longevidade — ciência total + experiência total.
+                    </p>
+                    <ul>
+                        <li>Testes genéticos completos + análise de ancestralidade.</li>
+                        <li>Protocolo 100% personalizado (nutrição, psicologia, treino, prevenção).</li>
+                        <li>GEN com consciência total e micro-ajustes em tempo real.</li>
+                        <li>Curadoria inteligente de compras.</li>
+                        <li>Concierge de saúde com especialistas e eventos exclusivos.</li>
+                        <li>Comunidades fechadas, desafios elite e acompanhamento premium.</li>
+                    </ul>
+                    <a href="#" class="btn btn-highlight">🚀 Quero ser Immortal</a>
+                </li>
+
+            </ul>
+        </section>
+
+        <!-- Why It Works Section -->
+        <section id="why-it-works" class="why-works-section">
+            <h2 class="section-title">Por que funciona</h2>
+    
+            <ul class="cards">
+                <li class="card">
+                    <h3>É pessoal</h3>
+                    <p>Alinhado ao seu código genético e biológico.</p>
+                </li>
+                <li class="card">
+                    <h3>É ativo</h3>
+                    <p>A GEN guia, lembra e motiva.</p>
+                </li>
+                <li class="card">
+                    <h3>É social</h3>
+                    <p>Comunidade e experiências dão sustentação ao hábito.</p>
+                </li>
+                <li class="card">
+                    <h3>É mensurável</h3>
+                    <p>Métricas claras e relatórios que mostram evolução real.</p>
+                </li>
+            </ul>
+        </section>
+
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="testimonials-section">
+            <h2 class="title text-center">Depoimentos Reais</h2>
+    
+            <div class="testimonial-cards">
+
+                <div class="testimonial-card">
+                    <div class="avatar">
+                        <img src="" alt="Foto da Carla">
+                    </div>
+                    <p class="text">
+                        “Não é mais um app. A GEN literalmente me guia — e a comunidade me puxa pra frente.”
+                    </p>
+                    <h4 class="name">- Carla, 42 -</h4>
+                    <div class="stars">
+                        ⭐️⭐️⭐️⭐️⭐️
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="avatar">
+                        <img src="" alt="Foto do Roberto">
+                    </div>
+                    <p class="text">
+                        “Transformei dados em rotina. A diferença é sentir motivação todos os dias.”
+                    </p>
+                    <h4 class="name">- Roberto, 51 -</h4>
+                    <div class="stars">
+                        ⭐️⭐️⭐️⭐️⭐️
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="avatar">
+                        <img src="" alt="Foto da Fernanda">
+                    </div>
+                    <p class="text">
+                        “Com o Immortal, entendi minha genética e finalmente personalizei tudo.”
+                    </p>
+                    <h4 class="name">- Fernanda, 38 -</h4>
+                    <div class="stars">
+                        ⭐️⭐️⭐️⭐️⭐️
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="final-cta" class="final-cta">
+            <h2 class="title text-center">Momentos criam hábitos</h2>
+            <p class="intro text-center">
+                Hábitos criam longevidade.<br>
+                A GEN está pronta para viver isso com você — <em>todos os dias</em>.
+            </p>
+            <div class="final-buttons">
+                <a href="#activate-gen" class="btn btn-primary">🔑 Ative sua GEN agora</a>
+                <a href="#challenge" class="btn btn-secondary">👟 Entrar em um desafio hoje</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-brand">
+            <h3 class="highlight">GenVity AI</h3>
+            <p>Ciência + Experiência + Comunidade para sua longevidade.</p>
+        </div>
+
+        <div class="footer-links">
+            <h4>Links Rápidos</h4>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#plans">Planos</a></li>
+                <li><a href="#community">Comunidade</a></li>
+                <li><a href="#why-it-works">Por que funciona</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-social">
+            <h4>Siga-nos:</h4>
+            <div class="social-icons">
+                <a href="#" aria-label="Facebook">📘</a>
+                <a href="#" aria-label="Instagram">📸</a>
+                <a href="#" aria-label="LinkedIn">💼</a>
+                <a href="#" aria-label="Twitter">🐦</a>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p class="text-center">© 2025 GenVity AI. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
